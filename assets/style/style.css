@@ -15,3 +15,15 @@ img {
 .row {
     position: relative;
 }
+
+.redborder {  
+    border-width: thick;
+    border-style: solid;
+    border-color: red;
+}
+
+.greenborder {
+    border-width: thick;
+    border-style: solid;
+    border-color: green;
+}
