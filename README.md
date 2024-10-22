@@ -69,8 +69,19 @@ So it personalises the game for the player, and gives opportunity for future lea
 ## Design Decisions
 
 ### Wireframes
-Include wireframes for key sections of your website.  
-Briefly describe the design choices, including layout, colour schemes, and fonts.  
+Wanted a design that was intuitive for pre-schoolers and therefore made use of graphics more than text. 
+Designed mobile first with the following wireframes:
+![picture alt](/docs/wireframe1.png "index page layout for animal sound quiz")
+
+![picture alt](/docs/wireframe1a.png "index page code requirements for animal sound quiz")
+![picture alt](/docs/wireframe2.png "page layout for animal group name quiz")
+![picture alt](/docs/wireframe3.png "page layout for animal home quiz")
+![picture alt](/docs/wireframe4.png "page layout for animal offspring quiz")
+
+
+The colours were chosen because....using ...
+
+Fonts choices.....
 
 ### Accessibility Considerations
 Discuss how accessibility guidelines were adhered to, including colour contrast and alt text for images.  
