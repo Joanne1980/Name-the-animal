@@ -14,3 +14,4 @@ modal.style.display = 'none';
 
 nameEntered.innerHTML = playerName.value;
 });
+
