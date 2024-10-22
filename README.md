@@ -42,13 +42,26 @@ So the game can be appropriate for their age group
   **Acceptance Criteria:** Adding an age field on pop up modal at the start of the game for player/parent to add age to make the game appropriate for age.
 
 ### Should-Have User Stories
-- **User Story 1:**  As a 
-
+- **User Story 8:**  As a site owner
+I would like to see a count down timer
+so the game is more challenging for the older children 
  **Acceptance Criteria:**
+Timer to appear on game screen and cease when time hits zero.
+
+- **User Story 12:**  As the site owner
+I would like the game to have different categories
+So the game is more interesting and challenging for player
+ **Acceptance Criteria:**
+ Adding different categories i.e animal sounds, habitat, offspring to make game more challenging for player.
+
+ - **User Story 13:**  As a site owner
+I would like the game to have different categories
+So it allows for future expansion of the game
+ **Acceptance Criteria:**
+Categories are being added to give some choice to the game and make it more interesting.
 
 ### Could-Have User Stories
 - **User Story 5:**  As a 
-
  **Acceptance Criteria:**
 
 ## Design Decisions
