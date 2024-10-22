@@ -136,6 +136,7 @@ Provide any additional insights gained during the project and thoughts on the ov
 - README template from Brian O Grady (github Mrbrianojee), Programme Director at Code Institute.
 - https://www.Pexels.com used for Animal vectors 
 - https://freeanimalsounds.org/downloads/ used for animal sounds
+- https://pixabay.com/ used for animal sounds
 - https://convertio.co/ used for converting audio and image files
 
 
