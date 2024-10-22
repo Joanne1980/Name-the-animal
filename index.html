@@ -8,15 +8,21 @@
     <meta name="Description" content="Enter your description here" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/cosmo/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="./assets/style/style.css">
+
     <title>Title</title>
 </head>
 
 <body>
+
     <div class="header">
         <h1>Name the animals</h1>
     </div>
     <br>
+
     <div class="game-container">
         <div class="row border">
             <div class="col-6 border">
@@ -28,15 +34,18 @@
                         <div class="row border">
                             <div class="col-4">
                                 <img src="assets/images/duck.webp" alt="duck">
+
                             </div>
                         </div>
                         <div class="row border">
                             <div class="col-4">
                                 <img src="assets/images/elephant.webp" alt="elephant">
+
                             </div>
                         </div>
                         <div class="row border">
                             <div class="col-4">
+
                                 <img src="assets/images/horse.webp" alt="horse">
                             </div>
                         </div>
@@ -47,9 +56,38 @@
     </div>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+
+                                <img src="assets/images/elephant.webp" alt="elephant">
+                            </div>
+                        </div>
+                        <div class="row border">
+                            <div class="col-4">
+                                <img src="assets/images/horse.webp" alt="horse">
+<!--Modal: Onload, enter name and age for appropriate game  -->
+<div id="start-modal" class="modal">
+    <div class="modal-background">
+      <div class="modal-content">
+        <h2>Name The Animal</h2>
+        <form class="modal-form" method="dialog" autocomplete="off">
+          <label for="player-name" aria-label="Enter optional username"><span>Name:</span></label><br>
+          <input type="text" id="player-name" name="player-name"><br>
+          <label for="player-age" aria-label="Enter you age"><span>Age:</span></label><br>
+          <input type="number" id="player-age" name="player-age"><br>
+          <button type="submit" id="name-button" class="tick-button">></button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js">
+                                </script>
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js">
+                                </script>
+                                <script
+                                    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js">
+                                </script>
+
 </body>
 
 </html>
