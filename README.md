@@ -61,8 +61,10 @@ So it allows for future expansion of the game
 Categories are being added to give some choice to the game and make it more interesting.
 
 ### Could-Have User Stories
-- **User Story 5:**  As a 
+- **User Story 10:**  As a  a site owner
+I would like for the player to be able to add their name
  **Acceptance Criteria:**
+So it personalises the game for the player, and gives opportunity for future leader board/multiplayer results.
 
 ## Design Decisions
 
