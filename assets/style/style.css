@@ -1,0 +1,17 @@
+body {
+    max-width: 1080px;
+    margin: auto;
+}
+
+img {
+    max-width: 15%;
+    max-height: 15%;
+}
+
+.border {
+    border: 1px solid blue !important;
+}
+
+.row {
+    position: relative;
+}
