@@ -1,29 +1,55 @@
-# Project Title
+# Name The Animal
+
+Live site link :
 
 ## Overview
+A multiple choice quiz to teach children about animals.
 
 ### Purpose
-The purpose of this project is to develop an interactive game aimed at pre-schoolers to have fun whilst learning about animals.   
+The purpose of this project is to develop an interactive quiz aimed at pre-schoolers to have fun whilst learning about animals.   
+
+
 
 ## User Stories
 
 ### Must-Have User Stories
-- **User Story 1:** Briefly describe the must-have feature.  
-  **Acceptance Criteria:** List the criteria that define the successful implementation of this user story.
-- **User Story 2:** Briefly describe the must-have feature.  
-  **Acceptance Criteria:** List the criteria that define the successful implementation of this user story.
+- **User Story 4:** As a preschooler
+I want to find my way around a game on my own
+So I don't need an adults help.  
+  **Acceptance Criteria:** Make the game easy to follow so its easy for the player.
+
+- **User Story 5:** As a I want the game to be educational
+So my child learns through play.
+  **Acceptance Criteria:** making the game educational for all players to learn
+
+- **User Story 6:** As a I want the game to be fun
+So I enjoy playing it.
+  **Acceptance Criteria:** Making the game interesting and fun for players of all ages
+
+- **User Story 7:**  As a parent,
+I want the game to be appropriate for my child
+So they are only seeing age appropriate content.
+ **Acceptance Criteria:** Submit age to make the game suitable for the age group of the player.
+
+- **User Story 9:**  As a site owner
+I would like the game to be accessible
+So its open to a wider audience as possible
+ **Acceptance Criteria:** Images with alt text/ pass wave test for accessibility. Appropriate font a size for readability.
+
+- **User Story 11:** As a site owner
+I would like the player to add their age
+So the game can be appropriate for their age group 
+  **Acceptance Criteria:** Adding an age field on pop up modal at the start of the game for player/parent to add age to make the game appropriate for age.
 
 ### Should-Have User Stories
-- **User Story 1:** Briefly describe the should-have feature.  
-  **Acceptance Criteria:** List the criteria that define the successful implementation of this user story.
-- **User Story 2:** Briefly describe the should-have feature.  
-  **Acceptance Criteria:** List the criteria that define the successful implementation of this user story.
+- **User Story 1:**  As a 
+
+ **Acceptance Criteria:**
 
 ### Could-Have User Stories
-- **User Story 1:** Briefly describe the could-have feature.  
-  **Acceptance Criteria:** List the criteria that define the successful implementation of this user story.
-- **User Story 2:** Briefly describe the could-have feature.  
-  **Acceptance Criteria:** List the criteria that define the successful implementation of this user story.
+- **User Story 5:**  As a 
+
+ **Acceptance Criteria:**
 
 ## Design Decisions
 
@@ -59,18 +85,25 @@ Include any advanced features you implemented: Should User Stories Implementatio
 ### Testing Results
 Summarize the results of testing across different devices and screen sizes.  
 Mention any issues found and how they were resolved.  
+- https://wave.webaim.org/ to be used to check colour contrast for accessibility
+- https://jsfiddle.net/ used to unit test code chuncks work as expected before adding to project
 
 ### Validation
 Discuss the validation process for HTML and CSS using W3C and Jigsaw validators.  
 Include the results of the validation process.  JSHint for JavaScript
-**Guidance:** Document your use of W3C and Jigsaw validators to ensure your HTML and CSS meet web standards. Include any errors or warnings encountered and how they were resolved.
+Include any errors or warnings encountered and how they were resolved.
 
+- https://validator.w3.org/#validate_by_input used to validate html
+- https://jigsaw.w3.org/css-validator/ used to validate css
+- 
 
 ## Deployment
 
 ### Deployment Process
 Briefly describe the deployment process to GitHub Pages or another cloud platform.  
 Mention any specific challenges encountered during deployment.  
+
+## Tablet and Mobile Views, Responsiveness example
 
 ## Reflection on Development Process
 
@@ -85,10 +118,10 @@ Provide any additional insights gained during the project and thoughts on the ov
 
 
 ## Credits
-README template from Brian O Grady (github Mrbrianojee), Programme Director at Code Institute.
-Animal vectors from Pexels
-Animal sound files from https://freeanimalsounds.org/downloads/
-File conversion by https://convertio.co/
+- README template from Brian O Grady (github Mrbrianojee), Programme Director at Code Institute.
+- https://www.Pexels.com used for Animal vectors 
+- https://freeanimalsounds.org/downloads/ used for animal sounds
+- https://convertio.co/ used for converting audio and image files
 
 
 ## Code Attribution
