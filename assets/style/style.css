@@ -3,6 +3,10 @@ body {
     margin: auto;
 }
 
+.header {
+    text-align: center;
+    font-size: 4rem;
+}
 img {
     max-width: 15%;
     max-height: 15%;
