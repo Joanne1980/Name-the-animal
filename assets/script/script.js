@@ -9,8 +9,9 @@ modal.style.display = 'none';
 nameEntered.innerHTML = playerName.value;
 });
 
-// setting up of variables we may need to for questions
-const animalSound {
+
+// To create questions in sequential order for animal sounds 
+const animalSound = {
   bear:"bear_snd",
   bee:"bee_snd",
   cat:"cat_snd",
@@ -41,6 +42,33 @@ const animalSound {
   wolf:"wolf_snd"
   };
   
+const animals= ["bear", "bee", "cat", "cow", "crow", "dog", "dolphin", "donkey",
+  "dove", "duck", "elephant", "frog", "goat", "goose", "gull", "horse",
+  "lion", "mouse", "owl", "parrot", "pig", "pigeon", "rattlesnake", "rooster", "seal", "sheep", "whale","wolf"]; 
+// Note - if we want to reuse the animals array for the next levels additional animals may need adding and not all animals present 
+// will have values in their corresponding objects therefore an include check will be needed.
+
+  let questionNum = 0;
+  let totalQuestions=animals.length;
+
+  while (questionNum < totalQuestions){
+          let a = (animals[questionNum]);            
+          let questionSound = (animalSound[a]);
+          console.log(questionSound);
+          // this will need to trigger linking of audio file to the play sound image as opposed to loggin to console. 
+          //need code block to diplay incorrect options and 1 correct option in random order at same time as play sound is presented. Store correct and incorrect options as temp variables
+          
+          //listen for player to select answer then compare to correct/expected answer
+          let (playerAnswer = correctAnswer)
+          if (condition){
+
+          };
+          // listen for Next button (or timeer) to trigger next question. 
+      questionNum++;
+  }
+  
+
+  // setting up of variables we may need to for next categories of quiz
   const animalGroups {
   ant:"army",
   badger:"cete",
@@ -67,7 +95,7 @@ const animalSound {
   lion:"pride",
   monkey:"troop",
   owl:"parliament",
-  parrot:"pandemonium"
+  parrot:"pandemonium",
   rattlesnake:"rhumba",
   rhino:"crash",
   rooster:"flock",
