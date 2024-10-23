@@ -7,17 +7,11 @@ window.addEventListener('load', function () {
 });
 
 // player name and age to be stored to be used for game 
-let playerName = document.querySelector('#playerName');
-let nameEntered = document.querySelector('#nameEntered');
-let enterName = document.querySelector('.username-tick');
-
-playerName.addEventListener('click', () => {
-const modal = document.querySelector('#startModal');
-modal.style.display = 'none';
-
-nameEntered.innerHTML = playerName.value;
-});
-
+let playerName;
+document.getElementById("mySubmit").onclick = function(){
+  playerName = document.getElementById("playerName").value;
+}
+console.log(playerName);
   
  
 // Array of animal pictures and corresponding sound filenames
