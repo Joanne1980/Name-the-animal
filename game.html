@@ -1,33 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/cosmo/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="./assets/style/style.css">
-<title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/cosmo/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Name The Animal</title>
+    <!--Favicon-->
+    <link rel="android-chrome" type="image" size="192x192" href="./assets/favicon/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" type="image" size="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image" size="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image" size="32x32" href="./assets/favicon/favicon-32x32.png">
 </head>
 
 <body>
-   <header>
-    <h1 class="game-name">Name The Animal</h1>
-   </header>
-   <div class="player">
-    <div class="playerName" col-4>
-        <input type="text" id="name" class="form-control" name="playerName" placeholder="Player Name">
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="game.html">game</a></li>
+        </ul>
+    </nav>
+    <div class="player">
+        <div class="playerName" col-4>
+            <input type="text" id="name" class="form-control" autocomplete="off" class="playerName"
+                placeholder="Player Name">
+        </div>
+        <div class="score" col-4>
+            <input type="number" id="score" class="form-control" name="score" placeholder="score">
+        </div>
     </div>
-    <div class="score" col-4>
-        <input type="number" id="score" class="form-control" name="score" placeholder="score">
+    <!--Modal: onload, enter name and age for approprate version of game-->
+    <div class="startModal">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Name The Animal</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="name">
+                        <div>
+                            <label for="playerName">Enter Name</label>
+                            <input type="text" class="form-control" id="playerName" aria-describedby="playerName">
+                        </div>
+                        <div>
+                            <label for="age">Enter Age</label>
+                            <input type="number" class="form-control" id="age" aria-describedby="age of player">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
-   </div>
-    
-   
-   
-   
-   <div class="game-container">
+
+
+
+    <div class="game-container">
         <div class="row border">
             <div class="col-6 border">
                 <audio src="" alt="">
@@ -49,42 +87,34 @@
                             <div class="col-4">
                                 <img src="assets/images/horse.webp" alt="horse">
 
-<footer>
-    <h5 class="developers">Developed by</h5>
-    <p>
-        <ul>
-            <li>Grace</li>
-            <li>Guissela</li>
-            <li>Joanne</li>
-            <a href="https://github.com/Joanne1980/Name-the-animal" target="_blank" rel="noopener" 
-            aria-label="Visit our github repository (opens in new screen)"><i class="fa-brands fa-square-github"></i></a>
+                                <footer>
+                                    <h5 class="developers">Developed by</h5>
+                                    <p>
+                                        <ul>
+                                            <li>Grace</li>
+                                            <li>Guissela</li>
+                                            <li>Joanne</li>
+                                            <a href="https://github.com/Joanne1980/Name-the-animal" target="_blank"
+                                                rel="noopener"
+                                                aria-label="Visit our github repository (opens in new screen)"><i
+                                                    class="fa-brands fa-square-github"></i></a>
 
-        </ul>
-    </p>
-</footer>
+                                        </ul>
+                                    </p>
+                                </footer>
 
-<!--Modal: onload, enter name and age for approprate version of game-->
-<div id="startModal" class="modal modal-fullscreen-sm-down"> 
-    <div class="modal-background">
-        <div class="modal-content">
-                <h2>Name The Animal</h2>
-            <form class="modal-form" method="dialog" autocomplete="off">
-                <label for="playerName" aria-label="enter name">Name:</label>
-                <input type="text" id="playerName" class="form-control" name="playerName">
-            <br> 
-                <label for="playerAge">Age:</label>
-                <input type="number" id="playerAge" class="form-control" name="playerAge">
-            <br>
-                <button type="submit" class="btn btn-primary" class="btn-close" data-bs-dismiss="modal">Submit</button>
-                <button type="button" class="btn btn-primary" class="btn-close" data-bs-dismiss="modal">Close</button>
-            </form>
 
-        </div>
-    </div>
-</div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+
+
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js">
+                                </script>
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js">
+                                </script>
+                                <script
+                                    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js">
+                                </script>
 </body>
+
 </html>
