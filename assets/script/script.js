@@ -9,7 +9,7 @@ window.addEventListener('load', function () {
 // player name and age to be stored to be used for game 
 let playerName;
 document.getElementById("mySubmit").onclick = function(){
-  playerName = document.getElementById("playerName").value;
+playerName = document.getElementById("playerName").value;
 }
 console.log(playerName);
   
