@@ -8,7 +8,7 @@
     <meta name="Description" content="Enter your description here" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/cosmo/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./game.css">
     <title>Name The Animal</title>
     <!--Favicon-->
     <link rel="android-chrome" type="image" size="192x192" href="./assets/favicon/android-chrome-192x192.png">
@@ -34,7 +34,7 @@
         </div>
     </div>
     <!--Modal: onload, enter name and age for approprate version of game-->
-    <div class="startModal">
+    <!--<div class="startModal">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header">
@@ -61,7 +61,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
 
 
@@ -103,10 +103,26 @@
                                     </p>
                                 </footer>
 
+                                <div id="start-modal" class="modal">
+                                    <div class="modal-background">
+                                      <div class="modal-content">
+                                        <h2>Name The Animal</h2>
+                                        <p>Click play to listen to the animal sound and choose which animal the sound belongs too</p>
+                                          <!-- Optional enter name to personalise board -->
+                                        <form class="modal-form" method="dialog" autocomplete="off">
+                                          <label for="username" aria-label="Enter optional username"><span>Enter your name:</span></label><br>
+                                          <input type="text" id="playerName" name="playerName" placeholder="(optional)"><br>
+                                          <label for="age" aria-label="age"><span>Enter your age:</span></label><br>
+                                          <input type="number" id="age" name="age" placeholder="(optional)"><br>
+                                          <button type="submit" id="name-button" class="tick-button"><img
+                                              class="username-tick" src="./assets/images/submit button.png" alt="checkmark - optional click to enter username and/or start game"></button>
+                                        </form>
+                                      </div>
+                                    </div>
+                                  </div>
 
 
-
-
+<script src="./game.js"></script>
 
                                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js">
                                 </script>
