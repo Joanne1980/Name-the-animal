@@ -10,13 +10,13 @@ window.addEventListener('load', function () {
 
 // take OPTIONAL player name, close modal and display player name in 'Name' window - code adapted from Keith Paterson https://www.youtube.com/watch?v=KB6Yg5hNrqc
 
-let username = document.querySelector('#username');
+let playerName = document.querySelector('#playerName');
 let nameEntered = document.querySelector('#nameEntered');
-let enterName = document.querySelector('.username-tick');
+let enterName = document.querySelector('.button');
 
 enterName.addEventListener('click', () => {
 const modal = document.querySelector('#start-modal');
 modal.style.display = 'none';
 
-nameEntered.innerHTML = username.value;
+nameEntered.innerHTML = playerName.value;
 });
