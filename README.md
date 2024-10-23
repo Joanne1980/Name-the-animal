@@ -84,8 +84,15 @@ for a colour theme was to have blues and greens to represent nature i.e. fields,
 The following colour theme was generated using Adobe color. 
 ![picture alt](/docs/AdobeColor-Name-the-Animals.jpeg "Generated colour theme from AdobeColor")
 ![picture alt](/docs/Adobe%20color%20-%20No%20conflicts.jpg "Colour theme colour blind check result")
+To achieve enough contrast between the background and foreground it was decided that for the majoriy of content to use either:
+- background colour of hex a1c7de with a text colour of rgb 1, 70, 1
+- background colour of hex 7cdbb0 with a text colour of navy
+- border colour of hex db8176
 
-Fonts choices.....
+![picture alt](/docs/contrast%20passed.png "Lighthouse accessibility check of foreground and background contrast")
+
+It was decided to keep the look of the page very simple and easy to read for young children.
+No fancy decorative fonts were chosen for this reason. 
 
 ### Accessibility Considerations
 Discuss how accessibility guidelines were adhered to, including colour contrast and alt text for images.  
