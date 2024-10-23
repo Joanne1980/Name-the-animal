@@ -1,6 +1,6 @@
 # Name The Animal
 
-Live site link :
+Live site link : https://joanne1980.github.io/Name-the-animal/
 
 ## Overview
 A multiple choice quiz to teach children about animals.
@@ -79,7 +79,11 @@ Designed mobile first with the following wireframes:
 ![picture alt](/docs/wireframe4.png "page layout for animal offspring quiz")
 
 
-The colours were chosen because....using ...
+Because this quiz is based on animals that live in the natural world our starting idea 
+for a colour theme was to have blues and greens to represent nature i.e. fields, sky and sea.
+The following colour theme was generated using Adobe color. 
+![picture alt](/docs/AdobeColor-Name-the-Animals.jpeg "Generated colour theme from AdobeColor")
+![picture alt](/docs/Adobe%20color%20-%20No%20conflicts.jpg "Colour theme colour blind check result")
 
 Fonts choices.....
 
@@ -134,9 +138,11 @@ Mention any specific challenges encountered during deployment.
 ## Reflection on Development Process
 
 ### Successes
+Great teamwork that played to each others strengths. Collaborated well during the ideation phase and were able to start devoping relatively quickly with a clear plan of what we wanted to achieve. Any issues faced were solved as a group and helped us learn. 
 
 
 ### Challenges
+The team faced some merge conflicts when we started coding. This was a great learning opportunity on how to resolve the conflict in gitpod without overwriting each others work. The need for clear communication and ownership of tasks was the take-away. Having a more detailed breakdown of tasks in our project board with the team member assigned to each should help avoid future conflicts.
 
 
 ### Final Thoughts
@@ -149,6 +155,7 @@ Provide any additional insights gained during the project and thoughts on the ov
 - https://freeanimalsounds.org/downloads/ used for animal sounds
 - https://pixabay.com/ used for animal sounds
 - https://convertio.co/ used for converting audio and image files
+- https://color.adobe.com/ was used to generate a color pallette 
 
 
 ## Code Attribution
