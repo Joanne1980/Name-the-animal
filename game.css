@@ -1,35 +1,39 @@
-/*.modal {
-    position: absolute;
+ /*.modal {
+     /*position: absolute; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 100%;
     width: 100%;
-}
+} 
 
-.modal-background {
+.start-modal.modal {
     height: 100vh;
     width: 100%;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.6);
     background-size: cover;
     background-position: center;
+}*/
+.button {
+    width: 40px;
+    height: 40px;  
 }
 
 .modal-content {
-    background-image: linear-gradient(#C28B51, #EDC88C);
-    /* solid box-shadow code - adapted from https://webdesignerhut.com/3d-buttons-with-css-dropshadow/ */
-    /*box-shadow: 1px 0px 0px #382A25, 0px 1px 0px #382A25,
+    background-image: linear-gradient(#a1c7de, #7cd880);
+     /*solid box-shadow code - adapted from https://webdesignerhut.com/3d-buttons-with-css-dropshadow/ */
+   /* box-shadow: 1px 0px 0px #382A25, 0px 1px 0px #382A25,
         2px 1px 0px #382A25, 1px 2px 0px #382A25,
         3px 2px 0px #382A25, 2px 3px 0px #382A25,
         4px 3px 0px #382A25, 3px 4px 0px #382A25,
         5px 4px 0px #382A25, 4px 5px 0px #382A25,
         6px 5px 0px #382A25, 5px 6px 0px #382A25,
-        7px 6px 0px #382A25, 6px 7px 0px #382A25;
-    border-radius: 8px;
+        7px 6px 0px #382A25, 6px 7px 0px #382A25;*/
+    border-radius: 8px;     
     padding: 20px;
-    width: 620px;
-    height: 520px;
+    width: 100vw;
+    height: 100vh;
     margin: 10px;
     font-size: 18px;
     font-weight: bold;
@@ -38,8 +42,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
 }
 
 .modal-form {
     margin-top: 12px;
-}*/
+}
