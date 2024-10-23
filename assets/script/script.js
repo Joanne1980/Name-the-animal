@@ -9,40 +9,11 @@ modal.style.display = 'none';
 nameEntered.innerHTML = playerName.value;
 });
 
-const animalSound = {
-  bear:"bear_snd",
-  bee:"bee_snd",
-  cat:"cat_snd",
-  cow:"cow_snd",
-  crow:"crow_snd",
-  dog:"dog_snd",
-  dolphin:"dolphin_snd",
-  donkey:"donkey_snd",
-  dove:"dove_snd",
-  duck:"duck_snd",
-  elephant:"elephant_snd",
-  frog:"frog_snd",
-  goat:"goat_snd",
-  goose:"goose_snd",
-  gull:"gull_snd",
-  horse:"horse_snd",
-  lion:"lion_snd",
-  mouse:"mouse_snd",
-  owl:"owl_snd",
-  parrot:"parrot_snd",
-  pig:"pig_snd",
-  pigeon:"pigeon_snd",
-  rattlesnake:"rattlesnake_snd",
-  rooster:"rooster_snd",
-  seal:"seal_snd",
-  sheep:"sheep_snd",
-  whale:"whale_snd",
-  wolf:"wolf_snd"
-  };
+
   
  
 // Array of animal pictures and corresponding sound filenames
-// const animals = ['bear', 'bee', 'cat', 'cow', 'dog'];
+
 const animals= ["bear", "bee", "cat", "cow", "crow", "dog", "dolphin", "donkey",
     "dove", "duck", "elephant", "frog", "goat", "goose", "gull", "horse",
     "lion", "mouse", "owl", "parrot", "pig", "pigeon", "rattlesnake", "rooster", "seal", "sheep", "whale","wolf"];     
@@ -92,104 +63,21 @@ const animals= ["bear", "bee", "cat", "cow", "crow", "dog", "dolphin", "donkey",
  function checkAnswer(selectedAnimal) {
      const message = document.getElementById('message');
      if (selectedAnimal === correctAnimal) {
-         message.innerText = 'Correct! You win!';
+         message.innerText = 'Well done, that is correct.';
          message.style.color = 'green';
      } else {
-         message.innerText = `Wrong! The correct answer was ${correctAnimal}.`;
+         message.innerText = `Better luck next time, the correct answer was ${correctAnimal}.`;
          message.style.color = 'red';
      }
 
-     // Start a new game after 3 seconds
-     setTimeout(startGame, 3000);
+     // Start a new game after 4 seconds
+     setTimeout(startGame, 4000);
  }
 
  // Start the game on page load
  window.onload = startGame;
 
 
+
  // setting up of variables we may need to for next categories of quiz
- const animalGroups {
-    ant:"army",
-    badger:"cete",
-    bee:"colony",
-    cat:"clowder",
-    camel:"caravan",
-    cow:"herd",
-    crow:"murder",
-    dog:"pack",
-    dolphin:"pod",
-    donkey:"drove",
-    duck:"brace",
-    elephant:"herd",
-    emu:"mob",
-    fish:"school",
-    flaminogo:"flamboyance",
-    frog:"army",
-    giraffe:"tower",
-    goat:"herd",
-    goose:"gaggle",
-    grasshopper:"cloud",
-    gull:"colony",
-    hippo:"thunder",
-    lion:"pride",
-    monkey:"troop",
-    owl:"parliament",
-    parrot:"pandemonium",
-    rattlesnake:"rhumba",
-    rhino:"crash",
-    rooster:"flock",
-    seal:"herd",
-    sheep:"flock",
-    whale:"pod",
-    wolf:"pack"
-    };
-    
-    const animalBabies {
-    bear:"cub",
-    bee:"pupa",
-    cat:"kitten",
-    cow:"calf",
-    dog:"puppy",
-    dolphin:"calf",
-    dove:"squab",
-    duck:"duckling",
-    elephant:"calf",
-    frog:"tadpole",
-    goat:"kid",
-    goose:"gosling",
-    gull:"chick",
-    horse:"foal",
-    kangaroo:"joey",
-    lion:"cub",
-    mouse:"pup",
-    owl:"owlet",
-    pig:"piglet",
-    rattlesnake:"snakelet",
-    rooster:"chick",
-    seal:"pup",
-    sheep:"lamb",
-    swan:"cygnet",
-    whale:"calf",
-    wolf:"pup"
-    };
-    
-    const animalHome {
-    ant:"hill",
-    badger:"sett",
-    bear:"den",
-    bee:"hive",
-    cat:"cattery",
-    cow:"shed",
-    dog:"kennel",
-    dove:"cote",
-    horse:"stable",
-    lion:"den",
-    mouse:"hole",
-    owl:"nest",
-    pig:"sty",
-    pigeon:"nest",
-    rabbit:"burrow",
-    rooster:"roost",
-    sheep:"pen",
-    wolf:"den"
-    };
+ 
