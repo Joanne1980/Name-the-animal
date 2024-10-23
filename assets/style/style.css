@@ -1,12 +1,26 @@
 body {
     max-width: 1080px;
     margin: auto;
+    background-color: #7CDBB0;
 }
 
 .header {
     text-align: center;
-    font-size: 4rem;
+  
 }
+
+.header h1 {
+    color:#635FDB;
+    font-weight: bold;
+    font-size:55px;
+}
+
+.header h2 {
+    color: #DB8176;
+    font-weight: bold;
+    font-size:33px;
+}
+
 img {
     width: 200px;
     margin: 10px;
