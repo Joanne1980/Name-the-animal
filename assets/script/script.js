@@ -1,3 +1,12 @@
+// open rules and player name modal on window load
+window.addEventListener('load', function () {
+  this.setTimeout(
+      function open(event) {
+          document.querySelector('#start-modal').style.display = "block";
+      }, 100);
+});
+
+// player name and age to be stored to be used for game 
 let playerName = document.querySelector('#playerName');
 let nameEntered = document.querySelector('#nameEntered');
 let enterName = document.querySelector('.username-tick');
@@ -8,7 +17,6 @@ modal.style.display = 'none';
 
 nameEntered.innerHTML = playerName.value;
 });
-
 
   
  
