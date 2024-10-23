@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/cosmo/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <link rel="stylesheet" href="assets/css/style.css">
-
     <link rel="stylesheet" href="./assets/style/style.css">
 
     <title>Title</title>
@@ -22,6 +20,7 @@
 </head>
 
 <body>
+
     <nav>
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
@@ -29,35 +28,30 @@
         </ul>
     </nav>
 
+    
+
+
     <div class="header">
         <h1>Name the animals</h1>
+        <h2>Which animal makes this sound?</h2>
     </div>
     <br>
 
-    <div class="game-container">
-        <div class="row">
-            <div class="col-6 redborder">
-                <audio src="" alt="">
+    <div class = "game-container">
+        <div class = "row ">
+            <div class="col-6">
+                <audio id="animalSound" controls></audio>
             </div>
-            <div class="col-6 border">
-                <div class="row greenborder">
-                    <div class="col-12 border">
-                        <div class="row border">
-                            <div class="col-4">
-                                <img src="assets/images/duck.webp" alt="duck">
-
-                            </div>
-                        </div>
-                        <div class="row border">
-                            <div class="col-4">
-                                <img src="assets/images/elephant.webp" alt="elephant">
-
-                            </div>
-                        </div>
-                        <div class="row border">
-                            <div class="col-4">
-                                <img src="assets/images/horse.webp" alt="horse">
-
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-6 greenborder">
+                        <div id="imageContainer"></div>
+                    </div>
+                </div>    
+            </div>
+        </div>    
+    </div>
+    <div id="message"></div>
 <footer></footer>
 
 <!--Modal: onload, enter name and age for approprate version of game-->
@@ -84,14 +78,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 
-                                <img src="assets/images/horse.webp" alt="horse">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                                
+                            
 
 
 
