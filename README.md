@@ -1,6 +1,8 @@
 # Name The Animal
-
 Live site link : https://joanne1980.github.io/Name-the-animal/
+
+![picture alt](/docs/On%20load%20modal%20of%20published%20game.png "Loading page for game")
+
 
 ## Overview
 A multiple choice quiz to teach children about animals.
@@ -131,7 +133,7 @@ Name entered was to be displayed on game screen but a fix is needed in the code 
 Manual testing of the game was ongoing throughout the development process. 
 
 Screen responsive testing through dev tools found that the animal images overflowed their game container on smaller screens. 
-This resolved by changing the bootstrap structure and adding d-flex justify-content-center to the row.
+This resolved by changing the bootstrap structure and adding d-flex justify-content-center to the row. We then did hit some responsiveness issues again but ran out of time to address these. 
 
 Issues were faced with getting the modal to work on the index page. The modal worked from the game.html using it's own game.js 
 file but when the code from the game.js was brought into the main js file it failed. 
@@ -154,36 +156,36 @@ Manual test results
 - Test score field is updated - fail. Resolution  - removed the score field from the page and put feature back into backlog for a future dev iteration. This is the MVP with initial target audience of pre-schoolers and the focus on helping them learn about animals so this was not seen as essential at this stage in the games developemnt. 
 - Test that the player is not presented with the same question during a level unless they restart the game - fail. Future enhancement required to fix this.
 
-- https://wave.webaim.org/ to be used to check colour contrast for accessibility
+- https://wave.webaim.org/ to be used to check colour contrast for accessibility. Only error was the developed by link in the footer and would fixed if we had more time.
 Please see a snippet of the WAVE report below:
+![picture alt](/docs/WAVE.png "WAVE reoirt")
 
 The game was tested for it's responsiveness using dev tools.
-
-Please see below a screenshot for a device width of 320px:
-
-Please see below a screenshot for a device width of 435px to emulate mobile devices:
+Unfortunately we hit an issue with overflow of the images again on the smaller screens without time to re-fix. This would need to be looked at in another iteration of development. 
 
 Please see below a screenshot for a device width of 1008px to emulate tablet devices:
+![picture alt](/docs/game%20page%20on%20table%201088%20width.png "Laptop view")
 
-Please see below a screenshot for a device width of 1440px to emulate laptop devices:
 
 ### Validation
 - https://jsfiddle.net/ was used in some cases to unit test code chunks worked as expected before adding to project
 
-- https://validator.w3.org/#validate_by_input  used to validate html.
-The results can be seen below:
+- https://validator.w3.org/#validate_by_input  was used to validate html. The HTML issues we faced and resolved were: Removing p tags from around an ul;  Removing type attribute in favicon links;  Removing duplicate class attribute in a couple of places and putting value inside a single class definition.
 
-HTML issues faced and resolved
+The final html validator result passed without issue and can be seen below:
+![picture alt](/docs/html%20validator%20pass.png "html validator result")
 
-- https://jigsaw.w3.org/css-validator/ used to validate css.
-The results can be seen below:
 
-CSS issues faced and resolved
+- https://jigsaw.w3.org/css-validator/ was used to validate css. Both CSS code files passed the validator first time without issue, giving the result below in both cases:
+![picture alt](/docs/CSS%20Validator%20of%20style.css%20file.png "html validator result")
 
-- https://jshint.com/ used to validate Java Script.
-The results can be seen below:
+- https://jshint.com/ used to validate Java Script. No issues needed resolving. The results can be seen below:
+![picture alt](/docs/JShint%20for%20script.js%20file.webp "JS validator result")
+![picture alt](/docs/JShint%20for%20Game.js%20file.webp "JS validator result")
 
-JS issues faced and resovled
+- Dev tools lighthouse report summary :
+![picture alt](/docs/Lighthouse%20report%20summary.png "Lighthouse Report summary")
+
 
 ## Deployment
 
@@ -234,7 +236,8 @@ Writing out use cases in pseudo code and breaking down into programmable feature
 
 
 ## Future Improvements
-- Take the name entered in the modal and display it on the game page.  
+- Fix responsiveness and fit game content to viewport so user does not have to scroll. 
+Take the name entered in the modal and display it on the game page.  
 - Implement the remaining game categories that were designed in the wireframes to meet our should have user stories 12 and 13.
 - Improve the styling
 - Add descriptions for screen readers for the images that appear dynamically.
