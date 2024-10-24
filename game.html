@@ -8,7 +8,7 @@
     <meta name="Description" content="Enter your description here" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/cosmo/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./game.css">
     <title>Name The Animal</title>
     <!--Favicon-->
     <link rel="android-chrome" type="image" size="192x192" href="./assets/favicon/android-chrome-192x192.png">
@@ -33,59 +33,32 @@
             <input type="number" id="score" class="form-control" name="score" placeholder="score">
         </div>
     </div>
-    <!--Modal: onload, enter name and age for approprate version of game-->
-    <div class="startModal">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="modal-title">Name The Animal</h2>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form class="name">
-                        <div>
-                            <label for="playerName">Enter Name</label>
-                            <input type="text" class="form-control" id="playerName" aria-describedby="playerName">
-                        </div>
-                        <div>
-                            <label for="age">Enter Age</label>
-                            <input type="number" class="form-control" id="age" aria-describedby="age of player">
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" id="mySubmit" class="btn btn-primary">Submit</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
+    
+
+            
+
+
+                                 <!-- player name and recent score -->
+    <div class="player-details">
+        <div class="name-score">
+          <div class="name-scores-flex">
+            <p class="name">Name</p>
+            <div class="name-entered" id="nameEntered">
+              <p class="digits"></p>
             </div>
+          </div>
+          <div class="name-scores-flex">
+            <p class="name">Recent<br>Score</p>
+            <div class="recent-scores" id="recentscore">
+              <p class="digits" id="playerBestTime">00:00</p>
+              <p class="digits" id="playerBestMoves">00</p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-
-
-
-    <div class="game-container">
-        <div class="row border">
-            <div class="col-6 border">
-                <audio src="" alt="">
-            </div>
-            <div class="col-6 border">
-                <div class="row border">
-                    <div class="col-12 border">
-                        <div class="row border">
-                            <div class="col-4">
-                                <img src="assets/images/duck.webp" alt="duck">
-                            </div>
-                        </div>
-                        <div class="row border">
-                            <div class="col-4">
-                                <img src="assets/images/elephant.webp" alt="elephant">
-                            </div>
-                        </div>
-                        <div class="row border">
-                            <div class="col-4">
-                                <img src="assets/images/horse.webp" alt="horse">
+       
+    
 
                                 <footer>
                                     <h5 class="developers">Developed by</h5>
@@ -103,10 +76,26 @@
                                     </p>
                                 </footer>
 
+                                <div id="start-modal" class="modal">
+                                    <div class="modal-background"> 
+                                      <div class="modal-content">
+                                        <h2>Name The Animal</h2>
+                                        <p>Click play to listen to the animal sound and choose which animal the sound belongs too</p>
+                                          <!-- Optional enter name to personalise board -->
+                                        <form class="modal-form" method="dialog" class="modal-fullscreen" autocomplete="off">
+                                          <label for="name" aria-label="Enter optional username"><span>Enter your name:</span></label><br>
+                                          <input type="text" id="playerName" name="playerName" placeholder="(optional)"><br>
+                                          <label for="age" aria-label="age"><span>Enter your age:</span></label><br>
+                                          <input type="number" id="age" name="age" placeholder="(optional)"><br>
+                                          <button type="submit" id="name-button" class="tick-button"><img
+                                              class="button"  alt="Submit button"><i class="fa-regular fa-circle-play"></i></button>
+                                        </form>
+                                      </div>
+                                    </div>
+                                  </div>
 
 
-
-
+<script src="./game.js"></script>
 
                                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js">
                                 </script>

@@ -1,18 +1,3 @@
-// open rules and player name modal on window load
-window.addEventListener('load', function () {
-  this.setTimeout(
-      function open(event) {
-          document.querySelector('#start-modal').style.display = "block";
-      }, 100);
-});
-
-// player name and age to be stored to be used for game 
-let playerName;
-document.getElementById("mySubmit").onclick = function(){
-  playerName = document.getElementById("playerName").value;
-}
-console.log(playerName);
-  
  
 // Array of animal pictures and corresponding sound filenames
 
