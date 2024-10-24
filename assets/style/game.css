@@ -22,3 +22,11 @@
 .modal-form {
     margin-top: 12px;
 }
+
+.player {
+    width: fit-content;
+    color: navy;
+    background-color: #A1C7DE;   
+    border: #db8176 solid 3px;
+}
+
