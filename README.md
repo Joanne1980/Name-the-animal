@@ -122,8 +122,8 @@ The MVP did not do anything with this as the first level of the game produced fo
 
 ### Optional Features (Could-Haves)
 - **User Story 10 Player Name 1:** 
-Implemented a form in pop up modal to ask for user name. Made this optional because MVP was based at pre-schoolers. 
-Name entered was displayed on game screen to help personalise the experience for the player and offer future development oppotunity for the us eg leaderboards 
+Implemented a form in pop up modal to ask for user name. Made this optional because MVP was based at pre-schoolers. Having player name on screen helps personalise the experience for the player and offer future development oppotunity eg leaderboards
+Name entered was to be displayed on game screen but a fix is needed in the code to get this fully working. 
 
 ## Testing and Validation
 
@@ -141,6 +141,7 @@ Manual test results
 - Test on page load that modal is presented - pass
 - Test that user can press play on modal and enter game without having to enter details - pass
 - Test that if user does enter their age that they can only enter a valid number - pass 
+- Test this if the user enters a name the name is displayed on the game screen -fail.
 - Test play button plays animal sound - pass
 - Test click on animal gives player a correct or incorrect message - pass
 - Test that player is automatically taken to the next question after answering - pass
@@ -150,7 +151,7 @@ Manual test results
 - Test that player can pause the sound - pass
 - Test that player can select answer whilst sound clip is still playing - pass
 - Test that if player selects answer whilst sound clip is still playing the timer to move to next question is triggered at point of answer and doesn't wait until clip finishes playing - pass
-- Test score field is updated - fail. Resolution  - removed the score field from the page and put feacture back into backlog for a future dev iteration. This is the MVP with initial target audience of pre-schoolers and the focus on helping them learn about animals so this was not seen as essential at this stage in the games developemnt. 
+- Test score field is updated - fail. Resolution  - removed the score field from the page and put feature back into backlog for a future dev iteration. This is the MVP with initial target audience of pre-schoolers and the focus on helping them learn about animals so this was not seen as essential at this stage in the games developemnt. 
 - Test that the player is not presented with the same question during a level unless they restart the game - fail. Future enhancement required to fix this.
 
 - https://wave.webaim.org/ to be used to check colour contrast for accessibility
@@ -167,12 +168,9 @@ Please see below a screenshot for a device width of 1008px to emulate tablet dev
 Please see below a screenshot for a device width of 1440px to emulate laptop devices:
 
 ### Validation
-Discuss the validation process for HTML and CSS using W3C and Jigsaw validators.  
-Include the results of the validation process.  JSHint for JavaScript
-Include any errors or warnings encountered and how they were resolved.
 - https://jsfiddle.net/ was used in some cases to unit test code chunks worked as expected before adding to project
 
-- https://validator.w3.org/#validate_by_input used to validate html.
+- https://validator.w3.org/#validate_by_input  used to validate html.
 The results can be seen below:
 
 HTML issues faced and resolved
@@ -190,10 +188,16 @@ JS issues faced and resovled
 ## Deployment
 
 ### Deployment Process
-Briefly describe the deployment process to GitHub Pages or another cloud platform.  
-Mention any specific challenges encountered during deployment.  
+GitHub was used to deploy the website. These were the steps taken to achieve this:  
 
-## Tablet and Mobile Views, Responsiveness example
+1. Login to GitHub account.
+2. Navigate to the project repository
+3. Click the Settings button near the top of the page.
+4. In the left-hand menu, find and click on the Pages button.
+5. In the Source section, choose 'main' from the drop-down, and select branch menu.
+6. Select 'root' from the drop-down folder menu.
+7. Click 'Save' and after a few moments the project was  made live and a link is visible at the top of the page.
+
 
 ## Reflection on Development Process
 
@@ -218,15 +222,19 @@ Writing out use cases in pseudo code and breaking down into programmable feature
 - https://freeanimalsounds.org/downloads/ used for animal sounds
 - https://pixabay.com/ used for animal sounds
 - https://convertio.co/ used for converting audio and image files
+- https://arapahoelibraries.org/blogs/post/names-for-groups-of-animals/  
+- https://www.orchidsinternationalschool.com/blog/child-learning/animals-and-their-homes
 - https://color.adobe.com/ was used to generate a color pallette 
 - Tutorial republic - modal information
 - https://getbootstrap.com/ 
 - https://github.com/amylour/irish_wildlife_matchup/blob/main/index.html modified modal code from here
 - https://www.w3schools.com/ for general coding help
 - https://www.youtube.com/@KevinPowell channel for modal  video
-- https://stackoverflow.com/questions/74766348/how-to-make-img-within-div-to-shuffle-randomly 
+- https://stackoverflow.com/questions/74766348/ how-to-make-img-within-div-to-shuffle-randomly 
+
 
 ## Future Improvements
+- Take the name entered in the modal and display it on the game page.  
 - Implement the remaining game categories that were designed in the wireframes to meet our should have user stories 12 and 13.
 - Improve the styling
 - Add descriptions for screen readers for the images that appear dynamically.
