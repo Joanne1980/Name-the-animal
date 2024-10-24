@@ -8,8 +8,6 @@ A multiple choice quiz to teach children about animals.
 ### Purpose
 The purpose of this project is to develop an interactive quiz aimed at pre-schoolers to have fun whilst learning about animals.   
 
-
-
 ## User Stories
 
 ### Must-Have User Stories
@@ -95,44 +93,99 @@ It was decided to keep the look of the page very simple and easy to read for you
 No fancy decorative fonts were chosen for this reason. 
 
 ### Accessibility Considerations
-Discuss how accessibility guidelines were adhered to, including colour contrast and alt text for images.  
+As mentioned in the design section above, colours were tested through lighthouse for accessibility.
+Images appear dynamically on the page making it difficult to add alt text, a future enhancement would be 
+to investigate how to ensure a description was added for screen readers for the images that appear dynamically. 
 
 ## Features Implementation
 
 ### Core Features (Must-Haves User Stories)
-- **Feature 1:** Description of the implemented feature.
-- **Feature 2:** Description of the implemented feature.
+- **User Story 4 - Easy to follow game :** 
+Game built. Modal on load deliberately does enforce input so that a pre-schooler could click on the play button without needed to type name and age. 
+Questions implemented through the use of graphics and audio -  play button for sound and animal pictures for multiple choice answer. 
+Even if the child cant read the answer text below they can see it is green when correct, red when it's incorrect. 
+A timer was put in place that automatically presented the next question to the player after they have submitted an answer. 
 
- Document all the must-have features you implemented, explaining how they align with the user stories and acceptance criteria.
+- **User Story 5 - making the game educational for all players to learn:** 
+Image and audio assets used to create the question and answers.
+Text appears to tell the player right answer if they select the wrong answer to help them learn. 
 
-### Advanced Features (Should-Haves)
-- **Feature 1:** Description of the implemented feature.
-- **Feature 2:** Description of the implemented feature.
+- **User Story 6 - Making the game interesting and fun for players of all ages:** 
+Bright colours implemented
+Bright AI generated animal vectors used
+Intuitive navigation 
+Variety of questions to cycle through 
 
-Include any advanced features you implemented: Should User Stories Implementation & Any Advanced Features. Explain how these features enhance user experience and their alignment with the acceptance criteria.
+- **User Story 11: Adding an age field on pop up modal at the start of the game for player/parent to add age**  
+The age input was implemented in the pop up modal on page load. 
+The MVP did not do anything with this as the first level of the game produced for the MVP was for pre-schoolers and all the content appropriate for that age group.
 
 ### Optional Features (Could-Haves)
-- **Feature 1:** Description of the implemented feature (if any).
-- **Feature 2:** Description of the implemented feature (if any).
-
-(Include any could-have features that were implemented or considered) 
+- **User Story 10 Player Name 1:** 
+Implemented a form in pop up modal to ask for user name. Made this optional because MVP was based at pre-schoolers. 
+Name entered was displayed on game screen to help personalise the experience for the player and offer future development oppotunity for the us eg leaderboards 
 
 ## Testing and Validation
 
 ### Testing Results
-Summarize the results of testing across different devices and screen sizes.  
-Mention any issues found and how they were resolved.  
+Manual testing of the game was ongoing throughout the development process. 
+
+Screen responsive testing through dev tools found that the animal images overflowed their game container on smaller screens. 
+This resolved by changing the bootstrap structure and adding d-flex justify-content-center to the row.
+
+Issues were faced with getting the modal to work on the index page. The modal worked from the game.html using it's own game.js 
+file but when the code from the game.js was brought into the main js file it failed. 
+The solution was to link the index file to the game.js and game.css
+
+Manual test results 
+- Test on page load that modal is presented - pass
+- Test that user can press play on modal and enter game without having to enter details - pass
+- Test that if user does enter their age that they can only enter a valid number - pass 
+- Test play button plays animal sound - pass
+- Test click on animal gives player a correct or incorrect message - pass
+- Test that player is automatically taken to the next question after answering - pass
+- Test that the correct answer image appears in random order and not always in the same position for each question - pass
+- Test that player remains on same question until an answer is selected - pass
+- Test that player can replay the question sound multiple times before answering - pass
+- Test that player can pause the sound - pass
+- Test that player can select answer whilst sound clip is still playing - pass
+- Test that if player selects answer whilst sound clip is still playing the timer to move to next question is triggered at point of answer and doesn't wait until clip finishes playing - pass
+- Test score field is updated - fail. Resolution  - removed the score field from the page and put feacture back into backlog for a future dev iteration. This is the MVP with initial target audience of pre-schoolers and the focus on helping them learn about animals so this was not seen as essential at this stage in the games developemnt. 
+- Test that the player is not presented with the same question during a level unless they restart the game - fail. Future enhancement required to fix this.
+
 - https://wave.webaim.org/ to be used to check colour contrast for accessibility
-- https://jsfiddle.net/ used to unit test code chuncks work as expected before adding to project
+Please see a snippet of the WAVE report below:
+
+The game was tested for it's responsiveness using dev tools.
+
+Please see below a screenshot for a device width of 320px:
+
+Please see below a screenshot for a device width of 435px to emulate mobile devices:
+
+Please see below a screenshot for a device width of 1008px to emulate tablet devices:
+
+Please see below a screenshot for a device width of 1440px to emulate laptop devices:
 
 ### Validation
 Discuss the validation process for HTML and CSS using W3C and Jigsaw validators.  
 Include the results of the validation process.  JSHint for JavaScript
 Include any errors or warnings encountered and how they were resolved.
+- https://jsfiddle.net/ was used in some cases to unit test code chunks worked as expected before adding to project
 
-- https://validator.w3.org/#validate_by_input used to validate html
-- https://jigsaw.w3.org/css-validator/ used to validate css
-- 
+- https://validator.w3.org/#validate_by_input used to validate html.
+The results can be seen below:
+
+HTML issues faced and resolved
+
+- https://jigsaw.w3.org/css-validator/ used to validate css.
+The results can be seen below:
+
+CSS issues faced and resolved
+
+- https://jshint.com/ used to validate Java Script.
+The results can be seen below:
+
+JS issues faced and resovled
 
 ## Deployment
 
@@ -145,15 +198,18 @@ Mention any specific challenges encountered during deployment.
 ## Reflection on Development Process
 
 ### Successes
-Great teamwork that played to each others strengths. Collaborated well during the ideation phase and were able to start devoping relatively quickly with a clear plan of what we wanted to achieve. Any issues faced were solved as a group and helped us learn. 
+Worked as a team using each others strengths. Collaborated well during the ideation phase and were able to start devoping relatively quickly with a clear plan of what we wanted to achieve.  Issues faced  helped us learn. 
 
 
 ### Challenges
-The team faced some merge conflicts when we started coding. This was a great learning opportunity on how to resolve the conflict in gitpod without overwriting each others work. The need for clear communication and ownership of tasks was the take-away. Having a more detailed breakdown of tasks in our project board with the team member assigned to each should help avoid future conflicts.
+The team faced some merge conflicts when we started coding. This was a great learning opportunity on how to resolve the conflict in gitpod without overwriting each others work. 
+Communication was a challenge and not always knowing everyone was working in the code.
 
 
 ### Final Thoughts
-Provide any additional insights gained during the project and thoughts on the overall process.  
+Following conflicts of code and duplication of effort it highlighted how important clear communication and ownership of tasks is when coding collaboratively. 
+Going forward into another hackathon a more detailed breakdown of tasks on the project board and clear ownership of tasks should help avoid conflicts.
+Writing out use cases in pseudo code and breaking down into programmable features as a group before going off to code would have resulted in a better distribution of code effort. 
 
 
 ## Credits
@@ -163,12 +219,23 @@ Provide any additional insights gained during the project and thoughts on the ov
 - https://pixabay.com/ used for animal sounds
 - https://convertio.co/ used for converting audio and image files
 - https://color.adobe.com/ was used to generate a color pallette 
-
-
-## Code Attribution
-Properly attribute any external code sources used in the project (excluding GitHub Copilot-generated code).  
-
+- Tutorial republic - modal information
+- https://getbootstrap.com/ 
+- https://github.com/amylour/irish_wildlife_matchup/blob/main/index.html modified modal code from here
+- https://www.w3schools.com/ for general coding help
+- https://www.youtube.com/@KevinPowell channel for modal  video
+- https://stackoverflow.com/questions/74766348/how-to-make-img-within-div-to-shuffle-randomly 
 
 ## Future Improvements
-Briefly discuss potential future improvements or features that could be added to the project.  
-These could be Could user story features you didn’t have time to implement or improvements based on testing feedback.
+- Implement the remaining game categories that were designed in the wireframes to meet our should have user stories 12 and 13.
+- Improve the styling
+- Add descriptions for screen readers for the images that appear dynamically.
+- Add checks to avoid the same question being presented to the player unless they restart the game.
+- The answer text could include the image of the correct answer if the player gets the answer wrong. 
+- When selected change boder colour around the correct image to green.
+- When selected change border colour around the incorrect image to red. 
+- Implement feature to use the player age to determine the level of difficulty of questions in each category. 
+- Add our should have feature from user story 8 for a timer for the older age categories so they have to answer each question within a set time.
+- Keep score of correct answers and display on game screen.
+- Add sound. 
+- Add fun facts pop ups at the end of each game.
