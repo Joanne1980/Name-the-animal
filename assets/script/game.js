@@ -1,6 +1,4 @@
 // open rules and player name modal on window load
-
-
 window.addEventListener('load', function () {
     this.setTimeout(
         function open(event) {

@@ -8,7 +8,7 @@
     <meta name="Description" content="Enter your description here" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/cosmo/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <link rel="stylesheet" href="./assets/style/game.css">
     <link rel="stylesheet" href="./assets/style/style.css">
 
    
@@ -46,7 +46,7 @@
     
     
     <div id="message"></div>
-    <footer></footer>
+    <footer>
             <h5><a href="https://github.com/Joanne1980/Name-the-animal" target="_blank"
              class="developers"rel="noopener"
              aria-label="Visit our github repository (opens in new screen)">Developed by</a></h5>
@@ -58,8 +58,25 @@
         </ul>
     </p>
 </footer>
+<div id="start-modal" class="modal">
+    <div class="modal-background"> 
+      <div class="modal-content">
+        <h2>Name The Animal</h2>
+        <p>Click play to listen to the animal sound and choose which animal the sound belongs too</p>
+          <!-- Optional enter name to personalise board -->
+        <form class="modal-form" method="dialog" class="modal-fullscreen" autocomplete="off">
+          <label for="name" aria-label="Enter optional username"><span>Enter your name:</span></label><br>
+          <input type="text" id="playerName" name="playerName" placeholder="(optional)"><br>
+          <label for="age" aria-label="age"><span>Enter your age:</span></label><br>
+          <input type="number" id="age" name="age" placeholder="(optional)"><br>
+          <button type="submit" id="name-button" class="tick-button"><img
+              class="button" src="./assets/images/submit button.png" alt="Submit button"></button>
+        </form>
+      </div>
+    </div>
+  </div>
 
-
+<script src="./assets/script/game.js"></script>
 <script src="./assets/script/script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
