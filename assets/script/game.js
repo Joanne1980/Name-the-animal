@@ -9,7 +9,7 @@ window.addEventListener('load', function () {
 // take OPTIONAL player name, close modal and display player name in 'Name' window 
 let playerName = document.querySelector('#playerName');
 let name = document.querySelector('#name');
-let enterName = document.querySelector('.button');
+let enterName = document.querySelector('#name-button');
 
 enterName.addEventListener('click', () => {
 const modal = document.querySelector('#start-modal');
